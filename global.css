@@ -1,0 +1,30 @@
+:root{
+	--dark1: rgb(32, 35, 38);
+	--dark2: rgb(40, 46, 51) ;
+	--dark-text: rgb(212, 212, 212);
+	--side-padding: 3.5vw;
+}
+body{
+    margin:0px
+}
+.text{
+    font-family: monospace;
+    color: var(--dark-text);
+    font-weight: lighter;
+}
+.btn{
+    position:absolute; 
+    top:57%; 
+    padding: 15px; 
+    margin:0px; 
+    user-select: none; 
+    font-size: 5vw; 
+    font-weight: 200;
+    font-family: monospace;
+    z-index: 3;
+    color: var(--dark1);
+    transition: 0.1s;
+}
+.btn:hover{
+    font-size: 5.2vw;
+}

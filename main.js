@@ -8,27 +8,30 @@ window.onload = () => {
     launch = document.getElementById("launch");
     
     data = [
+	{
+		name: "drawtheline",
+		title: "Where do you draw the line?",
+		desc: "Take a quick test to see how you define different colors. Explore how different people perceive colors by comparing results.",
+	},
         {
-            name: "comingsoon",
-            title: "Coming Soon..",
-            desc: "🛠️ This website is a work in progress. New games & projects will be available here.",
-            launch: ""
-        }
+		name: "comingsoon",
+		title: "Coming Soon..",
+		desc: "🛠️ This website is a work in progress. New games & projects will be available here.",
+        },
     ];
 
     refresh();
 }
 
 function refresh(){
-    image.src = data[index].name + "/thumbnail.png";
-    title.innerHTML = data[index].title;
-    desc.innerHTML = data[index].desc;
+	image.src = './thumbnails/'+ data[index].name +'.png';
+    	title.innerHTML = data[index].title;
+    	desc.innerHTML = data[index].desc;
 }
 
 function launchbtn(){
-    if(launch != ""){
-        window.location = data[index].launch;
-    }
+	if (data[index].name == "comingsoon"){ return };
+	window.location = window.location + data[index].name;
 }
 
 function rightbtn(){
