@@ -22,7 +22,8 @@ body{
     font-weight: 200;
     font-family: monospace;
     z-index: 3;
-    color: var(--dark1);
+    color: var(--dark-text);
+    text-shadow: 0px 0px 4px var(--dark2);
     transition: 0.1s;
 }
 .btn:hover{
