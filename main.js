@@ -13,6 +13,11 @@ window.onload = () => {
 		title: "Where do you draw the line?",
 		desc: "Take a quick test to see how you define different colors. Explore how different people perceive colors by comparing results.",
 	},
+	{
+		name: "raytracer",
+		title: "Javscript Raytracer",
+		desc: "A demonstration of a ray tracer, written in Javascript. Includes 4 demo scenes and various other features."
+	},
         {
 		name: "comingsoon",
 		title: "Coming Soon..",
