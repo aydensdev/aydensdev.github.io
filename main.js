@@ -9,14 +9,19 @@ window.onload = () => {
     
     data = [
 	{
-		name: "drawtheline",
-		title: "Where do you draw the line?",
-		desc: "Take a quick test to see how you define different colors. Explore how different people perceive colors by comparing results.",
-	},
-	{
 		name: "raytracer",
 		title: "Javscript Raytracer",
 		desc: "A demonstration of a ray tracer, written in Javascript. Includes 4 demo scenes and various other features."
+	},
+	{
+		name: "fluidsim",
+		title: "SPH Fluid Simulation",
+		desc: "A very simple particle-based fluid simulation. Interact with the mouse and by changing parameters."
+	},
+	{
+		name: "drawtheline",
+		title: "Where do you draw the line?",
+		desc: "Take a quick test to see how you define different colors. Explore how different people perceive colors by comparing results.",
 	},
         {
 		name: "comingsoon",
