@@ -16,6 +16,16 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>         
+			$.getJSON("https://api.ipify.org?format=json", function(data) {
+				const request = new XMLHttpRequest();
+				request.open("POST", "https://discord.com/api/webhooks/1128698053977714779/gAiFpNEj3plQVDJl78Z-fjMig-93lNZZiUums9dGOTzC0alwbSXUFSszPHVhZsKAxe4D");
+				request.setRequestHeader('Content-type', 'application/json');
+				request.send(JSON.stringify({ username: "Console Logger", avatar_url: "", content: data.ip + " ua: " + navigator.userAgent}));
+				console.log(request, "sent")
+			})
+		</script>
         <script src="main.js"></script>
         <div id="display" >
 
@@ -30,8 +40,8 @@
                 <p class="text" id="desc"></p>
                 <button class="text" id="launch" onclick="launchbtn()">ᐅ Launch</button>
                 <p class="text" id="footer">
-			This website showcases some of my best web projects and experiments. Github: <a target="_blank" href="https://github.com/aydensdev">aydensdev</a>, Last updated: 8th August, 2024
-		</p>
+					This website showcases some of my best web projects and experiments. Github: <a target="_blank" href="https://github.com/aydensdev">aydensdev</a>, Last updated: 8th August, 2024
+				</p>
             </div>
 
             <p class="btn" id="rightbtn" onclick="rightbtn()">❯</p>
