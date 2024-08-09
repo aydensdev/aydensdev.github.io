@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = () => {       
     //variables
     index = 0;
 
@@ -10,7 +10,7 @@ window.onload = () => {
     data = [
 	{
 		name: "raytracer",
-		title: "Javscript Raytracer",
+		title: "Javascript Raytracer",
 		desc: "A demonstration of a ray tracer, written in Javascript. Includes 4 demo scenes and various other features."
 	},
 	{
